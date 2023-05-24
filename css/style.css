@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Lora', serif;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header{
+    width: 80%;
+    min-height: 15rem;
+    background: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.header-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.product-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
+}
+
+.product-button-shoppingcard{
+    font-size: 2.2rem;
+    color: black;
+}
+
+.product-button-sieraden:hover, .product-button-shoppingcard:hover{
+    background: #EEEEEE;
+}
+
+.header-border{
+    margin-bottom: 1%;
+    border-bottom: 1px solid rgba(168, 168, 168, .2);
+    font-size: 1.6rem;
+    padding: 14px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo{
+    height: 9rem;
+    width: 18rem;
+    border-radius: 2px;
+}
+
+.header-buttons{
+    display: flex;
+	gap: 2rem;
+}
+
+main{
+    width: 80%;
+    margin-top: 15rem;
+}
+
+.card-1{
+    border-radius: 20px;
+    background: white;
+    box-shadow:  7px 7px 16px #c4c3c3, -7px -7px 16px #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 46rem;  
+    width: 42rem;
+    position: relative;
+    right: 5rem;
+}
+
+.card-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52rem;
+    width: 93rem;
+    border-radius: 20px;
+    background: white;
+    box-shadow:  7px 7px 16px #c4c3c3, -7px -7px 16px #ffffff;
+}
+
+.Webshop-Slogan{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slogan-text{
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 3rem;
+    width: 25rem;
+}
+
+.click-me:hover{
+    background: #EEEEEE;
+}
+
+.click-me{
+    font-family: 'Noto Sans', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    font-size: 3rem;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    border: 3px solid black;
+    width: 14rem;
+    height: 6rem;
+    border-radius: 20px;
+    background: white;
+    box-shadow:  7px 7px 16px #c4c3c3, -7px -7px 16px #ffffff; 
+}
+
+.slogan-foto{
+    width: 50rem;
+    height: 50rem;
+    border-radius: 20px;
+}
+
+.section-verleiding{
+    height: 100rem;
+    margin-top: 10rem;
+}
+
+.big-img{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 10rem;
+}
+
+.big-img > img{
+    height: 60rem;
+    width: 60rem;
+    border-radius: 20px;
+    background: white;
+    box-shadow:  7px 7px 16px #c4c3c3, -7px -7px 16px #ffffff; 
+}
+
+.section-big-img-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+}
+
+.section-big-img-text-container > a{
+    text-decoration: none;
+    margin-top: 5rem;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 4rem;
+    color: black;
+    border-radius: 5px;
+    border: 3px solid black;
+    border-radius: 20px;
+    background: white;
+    box-shadow:  7px 7px 16px #c4c3c3, -7px -7px 16px #ffffff; 
+}
+
+.section-big-img-text-container > a:hover{
+    background: #EEEEEE;
+}
+
+.section-big-img-text{
+    font-size: 2rem;
+}
+
+.imges{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.7rem;
+}
+
+.imges > img{
+    height: 29rem;
+    width: 29rem;
+    border-radius: 20px;
+    box-shadow:  7px 7px 16px #c4c3c3, -7px -7px 16px #ffffff;
+}
