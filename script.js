@@ -40,3 +40,74 @@ for(let i = 0; i < arrowButtons.length; i++){
         }
     }
 };
+
+//filter
+let allProducts = document.getElementsByClassName("product");
+let filters = document.getElementsByClassName("filter");
+
+window.scrollTo(0,0);
+
+setInterval(function(){
+    document.getElementsByTagName("body")[0].style.overflow = "auto";
+}, 1500);
+
+for(let i = 0; i < filters.length; i++){
+    filters[i].checked = true;
+}
+
+//horloge filter
+let horlogeFilter = document.getElementById("checkbox-horloge")
+horlogeFilter.onchange = function(){
+    if(horlogeFilter.checked === true){
+        for(let i = 0; i < allProducts.length; i++){
+            if(allProducts[i].dataset.category === "horloge"){
+                allProducts[i].style.display = "block";
+            }
+        }  
+    }
+    else{
+        for(let i = 0; i < allProducts.length; i++){
+            if(allProducts[i].dataset.category === "horloge"){
+                allProducts[i].style.display = "none";
+            }
+        }
+    }
+}
+
+//ringen filter
+let ringenFilter = document.getElementById("checkbox-ringen")
+ringenFilter.onchange = function(){
+    if(ringenFilter.checked === true){
+        for(let i = 0; i < allProducts.length; i++){
+            if(allProducts[i].dataset.category === "ringen"){
+                allProducts[i].style.display = "block";
+            }
+        }  
+    }
+    else{
+        for(let i = 0; i < allProducts.length; i++){
+            if(allProducts[i].dataset.category === "ringen"){
+                allProducts[i].style.display = "none";
+            }
+        }
+    }
+}
+
+//kettingen filter
+let kettingenFilter = document.getElementById("checkbox-kettingen")
+kettingenFilter.onchange = function(){
+    if(kettingenFilter.checked === true){
+        for(let i = 0; i < allProducts.length; i++){
+            if(allProducts[i].dataset.category === "kettingen"){
+                allProducts[i].style.display = "block";
+            }
+        }  
+    }
+    else{
+        for(let i = 0; i < allProducts.length; i++){
+            if(allProducts[i].dataset.category === "kettingen"){
+                allProducts[i].style.display = "none";
+            }
+        }
+    }
+}
