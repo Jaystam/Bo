@@ -1,3 +1,20 @@
+//header scroll shadow
+window.addEventListener('scroll', function(){
+  var element = document.getElementById('box-shadow-header');
+  var scrollPosition = window.scrollY || window.pageYOffset;
+  
+  if (scrollPosition > 10) {
+    element.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.2)';
+  } else {
+    element.style.boxShadow = 'none';
+  }
+});
+document.addEventListener('DOMContentLoaded', function() {
+  var element = document.getElementById('box-shadow-header');
+  element.style.boxShadow = 'none';
+});
+
+
 function changeImage(imagePath) {
     document.getElementById('main-image').src = imagePath;
     document.getElementById('image-caption').textContent = imagePath.split('/').pop(); // Set caption based on image filename

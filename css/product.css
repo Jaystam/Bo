@@ -62,7 +62,13 @@ main{
     font-size: 2rem;
 }
 
+.price{
+    position: relative;
+    bottom: 10%;
+}
+
 .buy-button{
+    gap: 2rem;
     display: flex;
     justify-content: center;
     align-items: end;
