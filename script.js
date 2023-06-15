@@ -3,12 +3,16 @@ window.addEventListener('scroll', function(){
     var element = document.getElementById('box-shadow-header');
     var scrollPosition = window.scrollY || window.pageYOffset;
     
-    if (scrollPosition > 0) {
+    if (scrollPosition > 10) {
       element.style.boxShadow = '0 2px 4px rgba(0, 0, 0, 0.2)';
     } else {
       element.style.boxShadow = 'none';
     }
 });
+document.addEventListener('DOMContentLoaded', function() {
+    var element = document.getElementById('box-shadow-header');
+    element.style.boxShadow = 'none';
+  });
 
 //reviews
 let arrowButtons = document.getElementsByClassName("arrow");
@@ -41,73 +45,26 @@ for(let i = 0; i < arrowButtons.length; i++){
     }
 };
 
-//filter
-let allProducts = document.getElementsByClassName("product");
-let filters = document.getElementsByClassName("filter");
 
-window.scrollTo(0,0);
+window.addEventListener('DOMContentLoaded', function() {
+    let allProducts = document.getElementsByClassName("product-div");
+    let filters = document.querySelectorAll('input[type="checkbox"]');
 
-setInterval(function(){
-    document.getElementsByTagName("body")[0].style.overflow = "auto";
-}, 1500);
+    function filterProducts() {
+        let selectedCategories = Array.from(filters)
+            .filter(filter => filter.checked)
+            .map(filter => filter.id.replace("checkbox-", ""));
 
-for(let i = 0; i < filters.length; i++){
-    filters[i].checked = true;
-}
-
-//horloge filter
-let horlogeFilter = document.getElementById("checkbox-horloge")
-horlogeFilter.onchange = function(){
-    if(horlogeFilter.checked === true){
-        for(let i = 0; i < allProducts.length; i++){
-            if(allProducts[i].dataset.category === "horloge"){
+        for (let i = 0; i < allProducts.length; i++) {
+            if (selectedCategories.includes(allProducts[i].dataset.category)) {
                 allProducts[i].style.display = "block";
-            }
-        }  
-    }
-    else{
-        for(let i = 0; i < allProducts.length; i++){
-            if(allProducts[i].dataset.category === "horloge"){
+            } else {
                 allProducts[i].style.display = "none";
             }
         }
     }
-}
 
-//ringen filter
-let ringenFilter = document.getElementById("checkbox-ringen")
-ringenFilter.onchange = function(){
-    if(ringenFilter.checked === true){
-        for(let i = 0; i < allProducts.length; i++){
-            if(allProducts[i].dataset.category === "ringen"){
-                allProducts[i].style.display = "block";
-            }
-        }  
+    for (let i = 0; i < filters.length; i++) {
+        filters[i].addEventListener('change', filterProducts);
     }
-    else{
-        for(let i = 0; i < allProducts.length; i++){
-            if(allProducts[i].dataset.category === "ringen"){
-                allProducts[i].style.display = "none";
-            }
-        }
-    }
-}
-
-//kettingen filter
-let kettingenFilter = document.getElementById("checkbox-kettingen")
-kettingenFilter.onchange = function(){
-    if(kettingenFilter.checked === true){
-        for(let i = 0; i < allProducts.length; i++){
-            if(allProducts[i].dataset.category === "kettingen"){
-                allProducts[i].style.display = "block";
-            }
-        }  
-    }
-    else{
-        for(let i = 0; i < allProducts.length; i++){
-            if(allProducts[i].dataset.category === "kettingen"){
-                allProducts[i].style.display = "none";
-            }
-        }
-    }
-}
+});

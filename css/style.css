@@ -22,7 +22,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     min-height: 15rem;
     background: white;
     position: fixed;
@@ -31,7 +31,7 @@ header{
 }
 
 .header-container{
-    width: 80%;
+    width: 80vw;
 }
 
 .header-section{

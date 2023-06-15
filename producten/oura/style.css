@@ -1,0 +1,93 @@
+html{
+  font-size: 62.5%;
+}
+
+.shoppingcart{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 55px;
+  background: yellow;
+  border: 1px black solid;
+  border-radius: 50%;
+  position: fixed;
+  top: 100px;
+  right: 4%;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.shoppingcart > i{
+  font-size: 3rem;
+  color: black;
+}
+
+.image-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 4rem;
+}
+
+.images{
+  width: 300px;
+  height: 300px;
+  margin-top: 100px;
+  margin-right: 4rem;
+  object-fit: contain;
+}
+
+.image-section > div > h1{
+  font-size: 5rem;
+}
+
+.image-section > div{
+  margin-left: 20px;
+}
+
+.image-section, .buttons {
+  display: flex;
+  margin-top: 20px;
+  gap: 1rem;
+}
+
+.buttons > button{
+  border: none;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+}
+
+.black{
+  background-color: black;
+}
+
+.gold{
+  background-color: #FFD700;
+}
+
+.zilver{
+  background-color: #C0C0C0;
+}
+
+.image-section, .buttons button {
+  margin-bottom: 1rem;
+}
+
+.image-section, .caption {
+  margin-top: 1rem;
+}
+
+.buttons > button.active__choice{
+  border: 2px red solid;
+}
+
+.section-uitleg{
+  width: 80vw;
+}
+
+.section-uitleg > p{
+  width: 60%;
+  font-size: 2.7rem;
+}
