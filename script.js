@@ -1,3 +1,29 @@
+//fetch json
+fetch('product.json')
+  .then(response => response.json())
+  .then(data => {
+    const productList = document.getElementsByClassName('product-div');
+    console.log(productList);
+
+    for (let i = 0; i < 12; i++) {
+
+        let productName = data.products[i].naam;
+        let productPrice = data.products[i].prijs;
+        let productImg = data.products[i].img;
+
+        let listItem = productList[i].children;
+
+        let nameElement = listItem[1];
+        let priceElement = document.getElementsByClassName("price");
+        console.log(priceElement);
+        let imgElement = listItem[0];
+
+        nameElement.innerText = productName;
+        priceElement.innerText = productPrice + ".-";
+        imgElement.src = productImg;
+    }
+})
+
 //header scroll shadow
 window.addEventListener('scroll', function(){
     var element = document.getElementById('box-shadow-header');
