@@ -121,6 +121,7 @@ main{
 }
 
 .click-me{
+    padding: 2rem;
     font-family: 'Noto Sans', sans-serif;
     display: flex;
     justify-content: center;
@@ -131,7 +132,6 @@ main{
     color: white;
     border-radius: 5px;
     border: 2px solid white;
-    width: 90%;
     height: 6rem;
     border-radius: 20px;
     background: red;
@@ -344,9 +344,9 @@ main{
 }
 
 .profiel-foto{
-    width: 50%;
+    width: 8rem;
     height: 8rem;
-    max-height: 8rem;
+    object-fit: cover;
     border-radius: 50%;
     margin-bottom: 1rem;
 }

@@ -1,3 +1,8 @@
+//open page
+function openFile() {
+    window.location.href = "producten/oura/oura.html"; // Replace with the path to your local file
+}
+
 //popup
 function showPopup() {
     var popup = document.getElementById("popup");
@@ -84,7 +89,7 @@ for(let i = 0; i < arrowButtons.length; i++){
     }
 };
 
-
+//filter type
 window.addEventListener('DOMContentLoaded', function() {
     let allProducts = document.getElementsByClassName("product-div");
     let filters = document.querySelectorAll('input[type="checkbox"]');
@@ -107,3 +112,36 @@ window.addEventListener('DOMContentLoaded', function() {
         filters[i].addEventListener('change', filterProducts);
     }
 });
+
+//filter prijs
+function filterProducts() {
+    var selectedOption = document.getElementById("dropdown-options").value;
+    var products = document.getElementsByClassName("product-div");
+
+    for (var i = 0; i < products.length; i++) {
+      var product = products[i];
+      var category = product.dataset.category;
+      var priceElement = product.querySelector(".price");
+      var price = parseFloat(priceElement.textContent.replace("€", ""));
+
+      if (selectedOption === "50-") {
+        if (category === "50-" || category === "50-100") {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
+      } else if (selectedOption === "50-100") {
+        if (category === "50-" || category === "50-100") {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
+      } else if (selectedOption === "100+") {
+        if (category === "100+" || category === "50-100") {
+          product.style.display = "block";
+        } else {
+          product.style.display = "none";
+        }
+      }
+    }
+  }

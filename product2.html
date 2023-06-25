@@ -12,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/product.css">
-    <script src="product.js" defer></script>
     <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/49b8cc839d.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/Title Logo.png" type="image/icon type">
@@ -27,9 +26,10 @@
                     <img class="logo" src="img/Logo.png" alt="Logo van het luxelo">
                 </a>
                 <div class="header-buttons">
-                    <a class="product-button product-button-productpagina1" href="">productpagina#1</a>
-                    <a class="product-button product-button-productpagina2" href="">productpagina#2</i></a>
+                    <a class="product-button product-button-productpagina1" href="product.html">productpagina#1</a>
+                    <a class="product-button product-button-productpagina2" href="product2.html">productpagina#2</i></a>
                 </div>
+                <a class="shopping-cart-icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
             </section>
         </div>
     </header>
@@ -46,162 +46,96 @@
             </div>
         </section>
         <section class="section-products">
-            <div data-category="kettingen" class="product-div">
-                <figure class="figure-products product">
-                    <img src="img/ketting-1.webp" alt="">
-                </figure>
-                <article class="article-products">
-                    <p>                        
-                        Jeulia religieuze roestvrij stalen heren ketting met een prachtig kruis.
-                    </p>
-                </article>
-                <div class="buy-button">
-                    <a class="click-me-prductpagina" href="">Buy</a>
-                </div>
+
+            <div id="popup" class="popup">
+                <p>Added to card</p>
             </div>
-            <div data-category="ringen" class="product-div">
-                <figure class="figure-products product">
-                    <img src="img/ring-1.webp" alt="">
-                </figure>
-                <article class="article-products product">
-                    <p>
-                        Tungsten ring geborsteld centrum met lage afgeschuinde rand
-                    </p>
-                </article>
-                <div class="buy-button">
-                    <a class="click-me-prductpagina" href="">Buy</a>
-                </div>
-            </div>
+
             <div data-category="horloge" class="product-div">
-                <figure class="figure-products product">
-                    <img src="img/horloge-4.webp" alt="">
-                </figure>
-                <article class="article-products">
-                    <p>
-                        Casio analoog heren horloge met stalen band. horloge is 50 meter waterdicht.
-                    </p>
-                </article>
-                <div class="buy-button">
-                    <a class="click-me-prductpagina" href="">Buy</a>
-                </div>
-            </div>
+                <img src="img/ketting-1.webp" alt="">
+                <h3>Product Naam</h3>
+                <p class="price">€product prijs</p>
+                <button onclick="showPopup()" class="click-me-prductpagina" href=""><i class="fa-solid fa-cart-plus"></i></button>
+            </div>       
+
             <div data-category="ringen" class="product-div">
-                <figure class="figure-products product">
-                    <img src="img/ring-2.webp" alt="">
-                </figure>
-                <article class="article-products">
-                    <p>
-                        Recyclestaal zegelring met gestreept patroon en bijpassende ketting.                   
-                    </p>
-                </article>
-                <div class="buy-button">
-                    <a class="click-me-prductpagina" href="">Buy</a>
-                </div>
-            </div>
+                <img class="hover" onclick="openFile()" src="img/ketting-1.webp" alt="">
+                <h3>Product Naam</h3>
+                <p class="price">€product prijs</p>
+                <button onclick="showPopup()" class="click-me-prductpagina" href=""><i class="fa-solid fa-cart-plus"></i></button>
+            </div> 
+
             <div data-category="horloge" class="product-div">
-                <figure class="figure-products product">
-                    <img src="img/horloge-6.webp" alt="">
-                </figure>
-                <article class="article-products">
-                    <p>
-                        Q&Q herenhorloge met stalen kast en band.                   
-                    </p>
-                </article>
-                <div class="buy-button">
-                    <a class="click-me-prductpagina" href="">Buy</a>
-                </div>
-            </div>
-            <div data-category="horloge" class="product-div">
-                <figure class="figure-products product">
-                    <img src="img/horloge-7.webp" alt="">
-                </figure>
-                <article class="article-products">
-                    <p>
-                        Lorus stalen horloge, witte wijzerplaat, waterdicht tot 10 atm.                  
-                    </p>
-                </article>
-                <div class="buy-button">
-                    <a class="click-me-prductpagina" href="">Buy</a>
-                </div>
-            </div>
+                <img src="img/ketting-1.webp" alt="">
+                <h3>Product Naam</h3>
+                <p class="price">€product prijs</p>
+                <button onclick="showPopup()" class="click-me-prductpagina" href=""><i class="fa-solid fa-cart-plus"></i></button>
+            </div> 
+
             <div data-category="ringen" class="product-div">
-                <figure class="figure-products product">
-                    <img src="img/oura-silver.webp" alt="">
-                </figure>
-                <article class="article-products">
-                    <p>
-                       Oura Ring: Smart sleep and activity tracker for optimal wellness.                  
-                    </p>
-                </article>
-                <div class="buy-button">
-                    <a class="click-me-prductpagina" href="producten/oura/oura.html">Buy</a>
-                </div>
-            </div>
+                <img src="img/ketting-1.webp" alt="">
+                <h3>Product Naam</h3>
+                <p class="price">€product prijs</p>
+                <button onclick="showPopup()" class="click-me-prductpagina" href=""><i class="fa-solid fa-cart-plus"></i></button>
+            </div> 
+
+            <div data-category="kettingen" class="product-div">
+                <img src="img/ketting-1.webp" alt="">
+                <h3>Product Naam</h3>
+                <p class="price">€product prijs</p>
+                <button onclick="showPopup()" class="click-me-prductpagina" href=""><i class="fa-solid fa-cart-plus"></i></button>
+            </div> 
+
             <div data-category="ringen" class="product-div">
-                <figure class="figure-products product">
-                    <img src="img/ring-3.webp" alt="">
-                </figure>
-                <article class="article-products">
-                    <p>
-                        Stalen herenring, mat, 6 mm breed, zwarte accenten.                  
-                    </p>
-                </article>
-                <div class="buy-button">
-                    <a class="click-me-prductpagina" href="">Buy</a>
-                </div>
-            </div>
+                <img src="img/ketting-1.webp" alt="">
+                <h3>Product Naam</h3>
+                <p class="price">€product prijs</p>
+                <button onclick="showPopup()" class="click-me-prductpagina" href=""><i class="fa-solid fa-cart-plus"></i></button>
+            </div> 
+
             <div data-category="horloge" class="product-div">
-                <figure class="figure-products product">
-                    <img src="img/horloge-5.webp" alt="">
-                </figure>
-                <article class="article-products">
-                    <p>
-                        Klassiek Regal herenhorloge, zwarte band en wijzerplaat.                  
-                    </p>
-                </article>
-                <div class="buy-button">
-                    <a class="click-me-prductpagina" href="">Buy</a>
-                </div>
-            </div>
+                <img src="img/ketting-1.webp" alt="">
+                <h3>Product Naam</h3>
+                <p class="price">€product prijs</p>
+                <button onclick="showPopup()" class="click-me-prductpagina" href=""><i class="fa-solid fa-cart-plus"></i></button>
+            </div> 
+
+            <div data-category="ringen" class="product-div">
+                <img src="img/ketting-1.webp" alt="">
+                <h3>Product Naam</h3>
+                <p class="price">€product prijs</p>
+                <button onclick="showPopup()" class="click-me-prductpagina" href=""><i class="fa-solid fa-cart-plus"></i></button>
+            </div> 
+
+            <div data-category="horloge" class="product-div">
+                <img src="img/ketting-1.webp" alt="">
+                <h3>Product Naam</h3>
+                <p class="price">€product prijs</p>
+                <button onclick="showPopup()" class="click-me-prductpagina" href=""><i class="fa-solid fa-cart-plus"></i></button>
+            </div> 
+
             <div data-category="kettingen" class="product-div">
-                <figure class="figure-products product">
-                    <img src="img/ketting-2.webp" alt="">
-                </figure>
-                <article class="article-products">
-                    <p>
-                        Deze heren ketting is gemaakt van gerecycled zilver.                  
-                    </p>
-                </article>
-                <div class="buy-button">
-                    <a class="click-me-prductpagina" href="">Buy</a>
-                </div>
-            </div>
+                <img src="img/ketting-1.webp" alt="">
+                <h3>Product Naam</h3>
+                <p class="price">€product prijs</p>
+                <button onclick="showPopup()" class="click-me-prductpagina" href=""><i class="fa-solid fa-cart-plus"></i></button>
+            </div> 
+
             <div data-category="kettingen" class="product-div">
-                <figure class="figure-products product">
-                    <img src="img/ketting-3.webp" alt="">
-                </figure>
-                <article class="article-products">
-                    <p>
-                        Stoere stalen dubbele ketting: antieke afwerking.                  
-                    </p>
-                </article>
-                <div class="buy-button">
-                    <a class="click-me-prductpagina" href="">Buy</a>
-                </div>
-            </div>
+                <img src="img/ketting-1.webp" alt="">
+                <h3>Product Naam</h3>
+                <p class="price">€product prijs</p>
+                <button onclick="showPopup()" class="click-me-prductpagina" href=""><i class="fa-solid fa-cart-plus"></i></button>
+            </div> 
+
             <div data-category="kettingen" class="product-div">
-                <figure class="figure-products product">
-                    <img src="img/ketting-4.webp" alt="">
-                </figure>
-                <article class="article-products">
-                    <p>
-                        Gerecycled stalen herenketting, smalle mat afgewerkte plaathanger.                  
-                    </p>
-                </article>
-                <div class="buy-button">
-                    <a class="click-me-prductpagina" href="">Buy</a>
-                </div>
-            </div>
+                <img src="img/ketting-1.webp" alt="">
+                <h3>Product Naam</h3>
+                <p class="price">€product prijs</p>
+                <button onclick="showPopup()" class="click-me-prductpagina" href=""><i class="fa-solid fa-cart-plus"></i></button>
+            </div> 
+
+
         </section>
     </main>
     <footer>

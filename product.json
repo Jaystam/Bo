@@ -2,62 +2,62 @@
     "products": [
         {
             "img": "img/horloge-4.webp",
-            "prijs": 68.99,
+            "prijs": 68,
             "naam": "Casio analoog"
         },
         {
             "img": "img/oura-silver.webp",
-            "prijs": 199.99,
+            "prijs": 199,
             "naam": "Oura Ring"
         },
         {
             "img": "img/horloge-6.webp",
-            "prijs": 79.99,
+            "prijs": 79,
             "naam": "Q&Q herenhorloge"
         },
         {
             "img": "img/ring-1.webp",
-            "prijs": 4.99,
+            "prijs": 4,
             "naam": "tungsten ring" 
         },
         {
             "img": "img/ketting-1.webp",
-            "prijs": 19.99,
+            "prijs": 19,
             "naam": "Jeulia ketting" 
         },
         {
             "img": "img/ring-2.webp",
-            "prijs": 6.99,
+            "prijs": 6,
             "naam": "Recyclestaal zegelring" 
         },
         {
             "img": "img/horloge-7.webp",
-            "prijs": 89.99,
+            "prijs": 89,
             "naam": "Lorus horloge" 
         },
         {
             "img": "img/ring-3.webp",
-            "prijs": 5.99,
+            "prijs": 5,
             "naam": "Stalen herenring" 
         },
         {
             "img": "img/horloge-5.webp",
-            "prijs": 19.99,
+            "prijs": 19,
             "naam": "Regal hotloge" 
         },
         {
             "img": "img/ketting-2.webp",
-            "prijs": 19.99,
+            "prijs": 19,
             "naam": "gerecycled zilvere ring" 
         },
         {
             "img": "img/ketting-3.webp",
-            "prijs": 19.99,
+            "prijs": 19,
             "naam": "stalen dubbele ketting" 
         },
         {
             "img": "img/ketting-4.webp",
-            "prijs": 19.99,
+            "prijs": 19,
             "naam": "Gerecycled stalen herenketting" 
         }
     ]
