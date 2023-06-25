@@ -1,3 +1,17 @@
+//popup
+function showPopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "flex";
+    setTimeout(function() {
+      hidePopup();
+    }, 500); // 1 second delay
+  }
+
+  function hidePopup() {
+    var popup = document.getElementById("popup");
+    popup.style.display = "none";
+  }
+
 //fetch json
 fetch('product.json')
   .then(response => response.json())
@@ -14,8 +28,7 @@ fetch('product.json')
         let listItem = productList[i].children;
 
         let nameElement = listItem[1];
-        let priceElement = document.getElementsByClassName("price");
-        console.log(priceElement);
+        let priceElement = listItem[2];
         let imgElement = listItem[0];
 
         nameElement.innerText = productName;
