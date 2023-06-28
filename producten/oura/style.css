@@ -110,3 +110,19 @@ body{
 .button-add-to-card:hover{
   cursor: pointer;
 }
+
+@media screen and (max-width: 1000px){
+  .section-uitleg > p{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .image-section{
+    flex-direction: column;
+  }
+  .button-add-to-card{
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+}

@@ -28,6 +28,7 @@ main{
 }
 
 .dropdown a{
+    cursor: pointer;
     text-align: left;
     background: white;
     border: none;
@@ -165,10 +166,19 @@ main{
     right: 5%;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 750px){
+    .popup{
+        height: 16rem;
+        font-size: 4rem;
+    }
     .inputs{
+        gap: 20px;
         flex-direction: column;
-        justify-content: center;
-        align-items: start;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .popup{
+        width: 60%;
     }
 }
