@@ -6,6 +6,10 @@ body{
   margin-top: 50px;
 }
 
+main{
+  margin-top: 10rem;
+}
+
 .shoppingcart{
   display: flex;
   justify-content: center;
@@ -94,4 +98,25 @@ body{
 .section-uitleg > p{
   width: 60%;
   font-size: 2.7rem;
+}
+
+/* button */
+
+.button-add-to-card{
+  border-radius: 8px;
+  width: 50%;
+  border: none;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: #FFD700;
+}
+
+.button-add-to-card:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px){
+  .image-section{
+    flex-direction: column;
+  }
 }

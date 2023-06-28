@@ -12,13 +12,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/shopping.css">
-    <script src="script.js" defer></script>
     <script src="https://kit.fontawesome.com/49b8cc839d.js" crossorigin="anonymous"></script>
     <link rel="icon" href="img/Title Logo.png" type="image/icon type">
     <title>LUXELO</title>
 </head>
 <body>
-    <header  class="box" id="box-shadow-header">
+    <header style="position: absolute;">
         <div class="header-container">
             <div class="header-border"></div>
             <section class="header-section">
@@ -26,6 +25,7 @@
                     <img class="logo" src="img/Logo.png" alt="Logo van het luxelo">
                 </a>
                 <div class="header-buttons">
+                    <i style="cursor: pointer;" class="fa-solid fa-bars bars-header"></i>
                     <a class="product-button product-button-productpagina1" href="product.html">productpagina#1</a>
                     <a class="product-button product-button-productpagina2" href="product2.html">productpagina#2</i></a>
                 </div>
@@ -33,19 +33,120 @@
         </div>
     </header>
     <main>
-                      
+        <div class="toegevoegde-text">
+            <h1>winkelmandje</h1>
+            <br>
+            <p>de producten in je winkelmandje zijn niet gereserveerd, tot je hebt afgerekend</p>
+        </div>
+        <div class="winkelmandje-container">
+            <section class="products-shoppingcard">
+                <div class="products">
+                    <img class="product-img" src="img/horloge-2.webp" alt="product img">
+                    <div class="product-info">
+                        <div class="product-information">
+                            <h3 class="title">q&q herenhorloge</h3>
+                            <div class="amount-section">
+                                <p class="amount">kleur: zilver</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <p class="price-per-product">per stuk 79.-</p>
+                        </div>
+                        <div class="product-prices">
+                            <i class="fa-solid fa-xmark"></i>
+                            <h3>79.-</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <img class="product-img" src="img/ketting-3.webp" alt="product img">
+                    <div class="product-info">
+                        <div class="product-information">
+                            <h3 class="title">stalen dubbele ketting</h3>
+                            <div class="amount-section">
+                                <p class="amount">kleur: zilver</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <p class="price-per-product">per stuk 19.-</p>
+                        </div>
+                        <div class="product-prices">
+                            <i class="fa-solid fa-xmark"></i>
+                            <h3>19.-</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <img class="product-img" src="img/oura-silver.webp" alt="product img">
+                    <div class="product-info">
+                        <div class="product-information">
+                            <h3 class="title">oura ring</h3>
+                            <div class="amount-section">
+                                <p class="amount">kleur: zilver</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <p class="price-per-product">per stuk 199.-</p>
+                        </div>
+                        <div class="product-prices">
+                            <i class="fa-solid fa-xmark"></i>
+                            <h3>199.-</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="products">
+                    <img class="product-img" src="img/ring-2.webp" alt="product img">
+                    <div class="product-info">
+                        <div class="product-information">
+                            <h3 class="title">recyclestaal zegelring</h3>
+                            <div class="amount-section">
+                                <p class="amount">kleur: zilver</p>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+                            <p class="price-per-product">per stuk 10.-</p>
+                        </div>
+                        <div class="product-prices">
+                            <i class="fa-solid fa-xmark"></i>
+                            <h3>10.-</h3>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="info-shoppingcard">
+                <div class="totaal-shoppingcard">
+                    <div><p class="tekst-totaal-shoppingcard">totaal van alle producten</p><p style="font-weight: 700;">€307.-</p></div>
+                    <div><p>korting</p><p style="font-weight: 700;">€0.-</p></div>
+                    <div class="totaalprijs"><p style="font-weight: 700;">totaal</p><p style="font-weight: 700; font-size: 3rem;">€307.-</p></div>
+                </div>
+                <button class="button-bestellen">bestellen</button>
+                <ul class="payoptions">
+                    <li><i class="fa-brands fa-ideal"></i></li>
+                    <li><i class="fa-brands fa-cc-mastercard"></i></li>
+                    <li><i class="fa-brands fa-paypal"></i></li>
+                    <li><i class="fa-brands fa-cc-visa"></i></li>
+                </ul> 
+            </section> 
+        </div>      
     </main>
     <footer>
         <section class="footer-products">
-            <h1>ontdek de collectie</h1>
             <div>
                 <article>
-                    <h1>heren</h1>
+                    <h1>ondek de collectie</h1>
                     <p>
-                        <a href="">ringen</a>
-                        <a href="">kettingen</a>
-                        <a href="">armbanden</a>
-                        <a href="">horloges</a>
+                        <a href="product.html">ringen</a>
+                        <a href="product.html">kettingen</a>
+                        <a href="product.html">armbanden</a>
+                        <a href="product.html">horloges</a>
+                    </p>
+                </article>
+                <article>
+                    <h1>contact</h1>
+                    <p>
+                        <ul class="ul-footer">
+                            <li>telefoon: (+31)6 57120212</li>
+                            <li>email: voorbeeld@gmail.com</li>
+                        </ul>
                     </p>
                 </article>
             </div>

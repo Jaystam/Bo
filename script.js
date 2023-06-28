@@ -1,28 +1,27 @@
 //open page
 function openFile() {
-    window.location.href = "producten/oura/oura.html"; // Replace with the path to your local file
+  window.location.href = "producten/oura/oura.html"; // Replace with the path to your local file
 }
 
 //popup
 function showPopup() {
-    var popup = document.getElementById("popup");
-    popup.style.display = "flex";
-    setTimeout(function() {
-      hidePopup();
-    }, 500); // 1 second delay
-  }
+  var popup = document.getElementById("popup");
+  popup.style.display = "flex";
+  setTimeout(function() {
+    hidePopup();
+  }, 500); // 1 second delay
+}
 
-  function hidePopup() {
-    var popup = document.getElementById("popup");
-    popup.style.display = "none";
-  }
+function hidePopup() {
+  var popup = document.getElementById("popup");
+  popup.style.display = "none";
+}
 
 //fetch json
 fetch('product.json')
   .then(response => response.json())
   .then(data => {
     const productList = document.getElementsByClassName('product-div');
-    console.log(productList);
 
     for (let i = 0; i < 12; i++) {
 
@@ -113,35 +112,34 @@ window.addEventListener('DOMContentLoaded', function() {
     }
 });
 
-//filter prijs
-function filterProducts() {
-    var selectedOption = document.getElementById("dropdown-options").value;
-    var products = document.getElementsByClassName("product-div");
-
-    for (var i = 0; i < products.length; i++) {
-      var product = products[i];
-      var category = product.dataset.category;
-      var priceElement = product.querySelector(".price");
-      var price = parseFloat(priceElement.textContent.replace("€", ""));
-
-      if (selectedOption === "50-") {
-        if (category === "50-" || category === "50-100") {
-          product.style.display = "block";
-        } else {
-          product.style.display = "none";
-        }
-      } else if (selectedOption === "50-100") {
-        if (category === "50-" || category === "50-100") {
-          product.style.display = "block";
-        } else {
-          product.style.display = "none";
-        }
-      } else if (selectedOption === "100+") {
-        if (category === "100+" || category === "50-100") {
-          product.style.display = "block";
-        } else {
-          product.style.display = "none";
-        }
-      }
+//dropdown menu
+function showFilters() {
+  var options = document.getElementsByClassName("dropdown-button");
+  for (var i = 0; i < 8; i++) {
+    if(options[i].style.display === "none"){
+      options[i].style.display = "flex";
+    }
+    else{
+      options[i].style.display = "none"
     }
   }
+}
+
+//filter prijs
+function prijsFilter(minPrice, maxPrice){
+  fetch('product.json')
+  .then(response => response.json())
+  .then(data => {
+
+    const products = document.getElementsByClassName("product-div");
+
+    for (let i = 0; i < products.length; i++) {
+
+        if (data.products[i].prijs >= minPrice && data.products[i].prijs <= maxPrice) {
+        products[i].style.display = "flex";
+      }
+      else{
+        products[i].style.display = "none";
+      }}
+
+})};

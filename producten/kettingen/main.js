@@ -35,3 +35,17 @@ function changeImage(imagePath) {
 }
 // Add the active__choice class to the first button initially
 ring[0].classList.add('active__choice');
+
+//popup
+function showPopup() {
+  var popup = document.getElementById("popup");
+  popup.style.display = "flex";
+  setTimeout(function() {
+    hidePopup();
+  }, 500); // 1 second delay
+}
+
+function hidePopup() {
+  var popup = document.getElementById("popup");
+  popup.style.display = "none";
+}

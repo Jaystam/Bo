@@ -26,29 +26,28 @@
                     <img class="logo" src="img/Logo.png" alt="Logo van het luxelo">
                 </a>
                 <div class="header-buttons">
+                    <i style="cursor: pointer;" class="fa-solid fa-bars bars-header"></i>
                     <a class="product-button product-button-productpagina1" href="product.html">productpagina#1</a>
                     <a class="product-button product-button-productpagina2" href="product2.html">productpagina#2</i></a>
                 </div>
-                <a class="shopping-cart-icon" href=""><i class="fa-solid fa-cart-shopping"></i></a>
+                <a class="shopping-cart-icon" href="shoppingcart.html"><i class="fa-solid fa-cart-shopping"></i></a>
             </section>
         </div>
     </header>
     <main>
-        <section class="inputs">
+        <section class="dropdown">
+            <button onclick="showFilters()">filter</button>
             <div>
-                <input class="checkbox" type="checkbox" id="checkbox-horloge" checked>horloges
-            </div>
-            <div>
-                <input class="checkbox" type="checkbox" id="checkbox-ringen" checked>ringen
-            </div>
-            <div>
-                <input class="checkbox" type="checkbox" id="checkbox-kettingen" checked>kettingen
+                <a onclick="prijsFilter(0, 1000)" class="dropdown-button">Alle prijzen</a>
+                <a onclick="prijsFilter(0, 10)" class="dropdown-button">0-10</a>
+                <a onclick="prijsFilter(10, 50)" class="dropdown-button">10-50</a>
+                <a onclick="prijsFilter(50, 1000)" class="dropdown-button">50+</a>
             </div>
         </section>
         <section class="section-products">
 
             <div id="popup" class="popup">
-                <p>Added to card</p>
+                <p>toegevoegd</p>
             </div>
 
             <div data-category="horloge" class="product-div">
@@ -59,7 +58,7 @@
             </div>       
 
             <div data-category="ringen" class="product-div">
-                <img class="hover" onclick="openFile()" src="img/ketting-1.webp" alt="">
+                <img style="cursor: pointer;" onclick="location.href='producten/oura/oura.html'" class="hover" onclick="openFile()" src="img/ketting-1.webp" alt="">
                 <h3>Product Naam</h3>
                 <p class="price">€product prijs</p>
                 <button onclick="showPopup()" class="click-me-prductpagina" href=""><i class="fa-solid fa-cart-plus"></i></button>
@@ -115,7 +114,7 @@
             </div> 
 
             <div data-category="kettingen" class="product-div">
-                <img src="img/ketting-1.webp" alt="">
+                <img style="cursor: pointer;" onclick="location.href='producten/kettingen/brian.html'" src="img/ketting-1.webp" alt="">
                 <h3>Product Naam</h3>
                 <p class="price">€product prijs</p>
                 <button onclick="showPopup()" class="click-me-prductpagina" href=""><i class="fa-solid fa-cart-plus"></i></button>
@@ -140,15 +139,23 @@
     </main>
     <footer>
         <section class="footer-products">
-            <h1>ontdek de collectie</h1>
             <div>
                 <article>
-                    <h1>heren</h1>
+                    <h1>ondek de collectie</h1>
                     <p>
-                        <a href="">ringen</a>
-                        <a href="">kettingen</a>
-                        <a href="">armbanden</a>
-                        <a href="">horloges</a>
+                        <a href="product.html">ringen</a>
+                        <a href="product.html">kettingen</a>
+                        <a href="product.html">armbanden</a>
+                        <a href="product.html">horloges</a>
+                    </p>
+                </article>
+                <article>
+                    <h1>contact</h1>
+                    <p>
+                        <ul class="ul-footer">
+                            <li>telefoon: (+31)6 57120212</li>
+                            <li>email: voorbeeld@gmail.com</li>
+                        </ul>
                     </p>
                 </article>
             </div>

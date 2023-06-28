@@ -1,0 +1,147 @@
+.toegevoegde-text{
+    font-size: 180%;
+    margin-bottom: 2rem;
+}
+
+.winkelmandje-container{
+    display: flex;
+    width: 100%;
+}
+
+.products-shoppingcard{
+    margin-right: 5%;
+}
+
+.products{
+    height: 18rem;
+    width: 50vw;
+    display: flex;
+    padding: 2rem;
+    border-bottom: 1px solid #e5e3de;
+}
+
+.product-img{
+    width: 15%;
+    object-fit: contain;
+}
+
+.product-info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.product-information{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.title{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: rgba(41, 41, 41, 0.8) ;
+}
+
+.amount-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(128, 128, 128, 0.6);
+    border-radius: 8px;
+    padding: 1rem 1.4rem;
+    width: 16rem;
+}
+
+.amount{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.price-per-product{
+    font-size: 1.6rem;
+    color: gray;
+    font-weight: 300;
+}
+
+.product-prices{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 2.8rem;
+    align-items: flex-end;
+}
+
+.product-prices i{
+    color: rgb(50, 50, 50);
+}
+
+.product-prices h3{
+    font-weight: 700;
+}
+
+.info-shoppingcard{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.totaalprijs{
+    display: flex;
+    align-items: center;
+}
+
+.totaal-shoppingcard{
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.totaal-shoppingcard > div{
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6rem;
+}
+
+.tekst-totaal-shoppingcard{
+    width: auto;
+}
+
+.button-bestellen{
+    background-color: #f8c011;
+    border: none;
+    width: 100%;
+    padding: 2rem;
+    font-weight: 600;
+    border-radius: 8px;
+    font-size: 2rem;
+}
+
+.payoptions{
+    width: 100%;
+    padding: 2rem;
+    justify-content: center;
+    display: flex;
+    gap: 4rem;
+    font-size: 3rem;
+    border-bottom: 1px rgb(0, 0, 0, 0.1) solid;
+}
+
+.payoptions > li{
+    list-style: none;
+}
+
+@media screen and (max-width: 1000px){
+    .winkelmandje-container{
+        flex-direction: column;
+        margin-bottom: 2rem;
+    }
+
+    .products{
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+}
